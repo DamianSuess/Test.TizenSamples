@@ -11,9 +11,14 @@ namespace TizenWatchfaceApp1
     protected override void OnCreate()
     {
       base.OnCreate();
+
+      // ElmSharp.Utility.AppendGlobalFontPath(DirectoryInfo.Resource);
       var watchfaceApp = new TextWatchApplication();
+
       _viewModel = new ClockViewModel();
       watchfaceApp.BindingContext = _viewModel;
+
+      SetTimeTickFrequency(1, TimeTickResolution.TimeTicksPerSecond);
       LoadWatchface(watchfaceApp);
     }
 
@@ -25,6 +30,7 @@ namespace TizenWatchfaceApp1
       if (_viewModel != null)
       {
         _viewModel.Time = time.Time.UtcTimestamp;
+        _viewModel.Date = time.Time.UtcTimestamp.ToString("MMM dd").ToUpper();
       }
     }
 

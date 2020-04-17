@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="4" package="org.tizen.example.ServiceApp1" version="1.0.0">
+  <profile name="common" />
+  <service-application appid="org.tizen.example.ServiceApp1"
+					exec="ServiceApp1.dll"
+					type="dotnet"
+					multiple="false"
+					taskmanage="false"
+					nodisplay="true">
+    <label>ServiceApp1</label>
+    <icon>ServiceApp1.png</icon>
+  </service-application>
+</manifest>
