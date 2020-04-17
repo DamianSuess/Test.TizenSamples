@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TizenWatchfaceApp1.TextWatchApplication">
+  <Application.MainPage>
+    <ContentPage>
+      <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+        <Label Text="Xeno Sports Watch" />
+
+        <Label x:Name="TimeLabel"
+               FontSize="Large"
+               Text="{Binding Time, StringFormat='{0:hh\\:mm\\:ss}'}" />
+      </StackLayout>
+    </ContentPage>
+  </Application.MainPage>
+</Application>
