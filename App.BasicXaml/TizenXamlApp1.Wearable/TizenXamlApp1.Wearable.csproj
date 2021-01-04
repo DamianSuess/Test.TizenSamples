@@ -20,7 +20,7 @@
 
   
   <ItemGroup>
-    <ProjectReference Include="..\TizenXamlApp1\TizenXamlApp1.csproj" />
+    <ProjectReference Include="..\TizenXamlApp1.Client\TizenXamlApp1.Client.csproj" />
   </ItemGroup>
   
 

@@ -1,6 +1,6 @@
 using Xamarin.Forms;
 
-namespace TizenXamlApp1
+namespace TizenXamlApp1.Wearable
 {
   internal class Program : global::Xamarin.Forms.Platform.Tizen.FormsApplication
   {
@@ -8,7 +8,7 @@ namespace TizenXamlApp1
     {
       base.OnCreate();
 
-      LoadApplication(new App());
+      LoadApplication(new Client.App());
     }
 
     private static void Main(string[] args)

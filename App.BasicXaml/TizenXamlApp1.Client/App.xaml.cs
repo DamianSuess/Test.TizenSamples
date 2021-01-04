@@ -1,7 +1,7 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace TizenXamlApp1
+namespace TizenXamlApp1.Client
 {
   [XamlCompilation(XamlCompilationOptions.Compile)]
   public partial class App : Application
@@ -10,7 +10,7 @@ namespace TizenXamlApp1
     {
       InitializeComponent();
 
-      MainPage = new TizenXamlApp1.MainPage();
+      MainPage = new MainPage();
     }
 
     protected override void OnStart()
