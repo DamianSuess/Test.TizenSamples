@@ -8,9 +8,10 @@ All samples in this repo are for Tizen Wearables (_Gear_) and not phone, TV, or 
 | Name              | Type | Description |
 |-------------------|------|-------------|
 | Watchface Monkey  | Watchface | Basic digital watch with Monkey Face graphic (_by Xamarin_)
-| App Basic XAML    | Wearable App | Basic test app using XAML
-| App Basic CS      | Wearable App | Basic test app using CS
+| App Basic XAML    | Wearable App | Basic test app using XAML (*Xamarin.Forms*)
+| App BasicForms CS | Wearable App | Basic test app using CS (*Xamarin.Forms*)
 | Service Basic     | Service | Background service example
+| Widget.FlyoutMenuMvvm | Widget | Sample Widget with Flyout menu using MVVM; generated from Tizen's Project Wizard (_Xamarin.Forms v4.7_)
 
 
 ## Things to Make

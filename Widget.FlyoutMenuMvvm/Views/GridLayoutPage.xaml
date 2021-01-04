@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Sample.Wizard.Views.GridLayoutPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:res="clr-namespace:Sample.Wizard.Resources"
+             xmlns:viewModels="clr-namespace:Sample.Wizard.ViewModels">
+  <ContentPage.BindingContext>
+    <viewModels:GridLayoutViewModel />
+  </ContentPage.BindingContext>
+
+  <ContentPage.Content>
+    <Grid BackgroundColor="White"
+          ColumnSpacing="2"
+          RowSpacing="2">
+      <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <BoxView Grid.ColumnSpan="2" Color="Black" />
+      <Label Grid.ColumnSpan="2"
+             HorizontalOptions="Center"
+             Text="{x:Static res:AppResources.GridLayoutPageTopText}"
+             TextColor="DeepSkyBlue"
+             VerticalOptions="Center" />
+      <BoxView Grid.Row="1" Color="Black" />
+      <StackLayout Grid.Row="1" Spacing="0">
+        <Label FontSize="8"
+               HorizontalOptions="Center"
+               Text="{x:Static res:AppResources.GridLayoutPageLeftText}" />
+        <Label HorizontalOptions="Center" Text="{x:Static res:AppResources.GridLayoutPageLeftValue}" />
+        <Label FontSize="8"
+               HorizontalOptions="Center"
+               Text="{x:Static res:AppResources.GridLayoutPageLeftUnit}" />
+      </StackLayout>
+      <BoxView Grid.Row="1"
+               Grid.Column="1"
+               Color="Black" />
+      <StackLayout Grid.Row="1"
+                   Grid.Column="1"
+                   Spacing="0">
+        <Label FontSize="8"
+               HorizontalOptions="Center"
+               Text="{x:Static res:AppResources.GridLayoutPageRightText}" />
+        <Label HorizontalOptions="Center" Text="{x:Static res:AppResources.GridLayoutPageRightValue}" />
+        <Label FontSize="8"
+               HorizontalOptions="Center"
+               Text="{x:Static res:AppResources.GridLayoutPageRightUnit}" />
+      </StackLayout>
+      <BoxView Grid.Row="2"
+               Grid.ColumnSpan="2"
+               Color="Black" />
+      <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
+        <Label FontSize="8"
+               HorizontalOptions="Center"
+               Text="{x:Static res:AppResources.GridLayoutPageBottomText}" />
+        <Label HorizontalOptions="Center" Text="{x:Static res:AppResources.GridLayoutPageBottomValue}" />
+      </StackLayout>
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>

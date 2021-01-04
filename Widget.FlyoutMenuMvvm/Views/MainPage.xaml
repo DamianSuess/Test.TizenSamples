@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Sample.Wizard.Views.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Sample.Wizard.ViewModels">
+  <ContentPage.BindingContext>
+    <viewModels:MainViewModel />
+  </ContentPage.BindingContext>
+
+  <ContentPage.Content>
+    <StackLayout Padding="40,40,40,40"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Horizontal"
+                 VerticalOptions="FillAndExpand">
+
+      <Button x:Name="denyButton"
+              Command="{Binding ClickDenyButtonCommand}"
+              HorizontalOptions="CenterAndExpand"
+              ImageSource="MainDeny.png"
+              VerticalOptions="CenterAndExpand" />
+
+      <Button x:Name="confirmButton"
+              Command="{Binding ClickConfirmButtonCommand}"
+              HorizontalOptions="CenterAndExpand"
+              ImageSource="MainConfirm.png"
+              VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

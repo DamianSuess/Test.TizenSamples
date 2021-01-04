@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Widget.FlyoutMenuMvvm", "Widget.FlyoutMenuMvvm\Widget.FlyoutMenuMvvm.csproj", "{0E475956-E37E-49BC-AAE6-69589C306AB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E475956-E37E-49BC-AAE6-69589C306AB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E475956-E37E-49BC-AAE6-69589C306AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E475956-E37E-49BC-AAE6-69589C306AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E475956-E37E-49BC-AAE6-69589C306AB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDCADD7D-8983-401C-890D-D109DA07439F}
+	EndGlobalSection
+EndGlobal
